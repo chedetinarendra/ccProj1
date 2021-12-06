@@ -1,0 +1,103 @@
+<!-- Store this code in 'login.html' file inside the 'templates' folder -->
+
+<html> 
+	<head> 
+		<meta charset="UTF-8"> 
+		<title> Register </title> 
+		<style>
+            body {font-family: Arial, Helvetica, sans-serif;}
+            body {background-image: linear-gradient(white,#757c82);}
+
+            form {border: 3px solid white;
+                background-color: #ffffff;
+                border-radius: 5px;
+                padding: 20px;
+                margin-left:30%;
+                margin-right:30%;
+                
+            }
+
+            
+            .msg{
+                color:#f5140c;
+                padding-left:200px;
+
+            }
+            input[type=text] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+                width:50%;
+               padding-bottom:15px;
+                margin-bottom:10px;
+}
+            input[type=password] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+                width:50%;
+                               padding-bottom:15px;
+
+}
+            .login{
+                margin-top:10px;
+                text-align:center;
+
+            }
+
+            .btn {
+            background-color: #343A40;
+            color: white;
+            margin: 8px 0;
+            cursor: pointer;
+            padding: 14px 20px;
+            border: none;
+            width: 40%;
+            }
+
+            .container {
+            padding: 2px;
+                
+            #margin-top:30px;
+            }
+            .det{
+                margin-left:30%;
+                width:90%;
+            }
+            input[type=submit]{
+                margin-left:3%;
+                width:40%;
+                border-radius:15px;
+            }
+
+
+            span.psw {
+            float: right;
+            padding-top: 16px;
+            background-color:#343A40
+            }
+            .bottom{
+
+          width:50%
+            }
+            h2{
+                padding-left:180px;
+            }
+        </style>		 
+			 
+	</head> 
+	<body></br></br></br></br></br> 
+		<div  class="container"> 
+				<form action = {{ url_for('register') }} method="post"> 
+                      <h2>Register</h2>
+                    <div  class="det">
+
+                    <input id="email" name="email" type="text" placeholder="Enter Your Email ID" class="textbox" required/></br></br>  
+					<input id="username" name="username" type="text" placeholder="Enter Your Username" class="textbox" required/></br></br> 
+                    <input id="password" name="password" type="password" placeholder="Enter Your Password" class="textbox" required/></br></br></br> 
+                    <input type="submit" class="btn"  value="Sign Up"></br> 
+</div>
+				</form> 
+		</div> 
+	</body> 
+</html> 
